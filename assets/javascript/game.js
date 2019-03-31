@@ -1,9 +1,11 @@
 var win;
 var lost;
 var randomNumber;
-
+//4 crystals - done
 for (var i = 0; i < 4; i++){
-    
+//random numbers for crystals - done
+    var random = Math.floor((Math.random()* 12 ) + 1);
+    console.log(random);
     var crystal = $("<div>");
     crystal.attr("class", 'crystal');
 // console.log(crystal)
