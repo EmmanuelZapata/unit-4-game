@@ -1,4 +1,13 @@
+/* 
 
+#instructions {
+	color: #fa7272;
+	border: solid;
+	border-color: #fa7272;
+	margin: 20px;
+	padding: 5px;
+	font-family: 'Inknut Antiqua', serif;
+} */
 
 .crystals {
     display: flex;
