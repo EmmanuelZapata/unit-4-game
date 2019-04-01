@@ -2,7 +2,7 @@
 var winScore;
 var lossesScore;
 var match;
-
+var crystalNum = 0;
 
 //random number to match from 30-99
 randomMatch = Math.floor((Math.random() * 69) + 30);
@@ -20,7 +20,12 @@ for (var i = 0; i < 4; i++){
     $(".crystals").append(crystal);
   
 }
+//clicking crystals to equal the random number made.
+$(".crystal").click(function (){ 
 
+ var crystalNum = $(this).attr('data-random');
+console.log(crystalNum);
+});
 //clicking crystals to equal the random number made.
 //if not equal to random number lose
 //if equal to random number win
