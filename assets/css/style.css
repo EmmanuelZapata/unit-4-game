@@ -1,0 +1,43 @@
+#imagesSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+	}
+
+	#firstCrystal, #secondCrystal, #thirdCrystal, #fourthCrystal {
+        border: 1px solid grey;
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px blue;
+        transition: box-shadow 1s tranform 2s;
+        margin-right: 15px;
+	}
+    #firstCrystal:hover{
+        box-shadow: 15px 15px 15px blue;
+        transform: translate(5px, 10px);
+        cursor: pointer;
+        transition: box-shadow 1s, transfor 1s;
+    }
+    #secondCrystal:hover{
+        box-shadow: 15px 15px 15px blue;
+        transform: translate(5px, 10px);
+        cursor: pointer;
+        transition: box-shadow 1s, transfor 1s;
+    }
+    #thirdCrystal:hover{
+        box-shadow: 15px 15px 15px blue;
+        transform: translate(5px, 10px);
+        cursor: pointer;
+        transition: box-shadow 1s, transfor 1s;
+    }
+    #fourthCrystal:hover{
+        box-shadow: 15px 15px 15px blue;
+        transform: translate(5px, 10px);
+        cursor: pointer;
+        transition: box-shadow 1s, transform 1s;
+    }
+
+    
+    /* #secondCrystal, #thirdCrystal, #fourthCrystal */
+    
