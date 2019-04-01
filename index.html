@@ -10,18 +10,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 </head>
 <body>
-        <!-- Instructions -->
-        <!-- <div id='instructions'>
+        <!-- Instructions - Done -->
+        <div id='instructions'>
                 <p>You will be given a random number at the start of the game</p>
                 <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your to your total score.</p>
                 <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
                 <p>The value of each crystal is hidden from you until you click on it.</p>
                 <p>Each time when the game starts, the game will change the values of each crystal.</p>
-            </div>             -->
+        </div> 
             
         <!-- Match the score number - Done -->
-
-            <div>
+        <div id='randomScoreSection'>
             <div id='randomScore'></div>
 		</div>
 
@@ -32,8 +31,28 @@
 				<div id='winsScore'></div>
 				<div id='lossesScore'></div>
             </div>
-            
+        <!-- Holds the crystals - Done -->
+
+        <div id='imagesSection'>
+                <div id='imagesWrapper'>
+                    <img class='images' id='firstCrystal' value='value1' src= "assets/images/1crystal.jpg" alt='crystal1'/>
+                    <img class='images' id='firstCrystal' value='value2' src= "assets/images/2crystal.jpg" alt='crystal2'/>
+                    <img class='images' id='firstCrystal' value='value3' src= "assets/images/3crystal.jpg" alt='crystal3'/>
+                    <img class='images' id='firstCrystal' value='value4' src= "assets/images/4crystal.jpg" alt='crystal4'/>
+                    </div>
+            </div>
+
+
+            <!-- The user's total score -->
+		<div class='totalScoreSection'>
+                <div>Your total score is:</div>
+            </div>
     
+            <div class='totalScoreSection'>
+                <div id='totalScore'></div>
+            </div>
+        </div>
+
   <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>

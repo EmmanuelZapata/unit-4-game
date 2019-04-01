@@ -50,16 +50,33 @@ function startGame (){
     }
 
     $('#totalScore').html(userScore);
-    
+  
+    }
 
+    // If loop for the win! - Done
 
-    
-}
+    	// When a round is complete, check if it's a win or loss
+	function roundComplete(score) {
+		if (userScore == scoreMatch) {
+			console.log('you win');
+			wins++;
+			$('#loss_win').html('You won!');
+			startGame();
+		}
+		else if(userScore > scoreMatch) {
+			console.log('you lose');
+			losses++;
+			$('#loss_win').html('You lost!');
+			startGame();
+		}
+    }
 
+    // Starting the game...
+	startGame()
 
-//if not equal to random number lose
-//if equal to random number win
-//keep track of wins or losses 
-//reset after win or loss but keep scores
-
-});
+	$('.images').click(function(){
+		var value = $(this).attr('value');
+		updateResults(value);
+		roundComplete();
+	});
+})
