@@ -21,13 +21,40 @@ function startGame (){
     crystalValue3 = Math.floor(1 + (Math.random()*12));
     crystalValue4 = Math.floor(1 + (Math.random()*12));
 
-     // Moving scores to HTML
+    // Moving scores to HTML
     $('#randomScore').html('Match me if you can: ' + scoreMatch);
     $('#totalScore').html(userScore);
     $('#winsScore').html('Wins: ' + wins);
     $('#lossesScore').html('Losses: ' + losses);
 }
 
+    // Updating the user's total score - Done
+    
+    function updateResults(someValue){
+    
+    // Determines what crystal value to add to the user's score - Done
+    
+    switch(someValue) {
+        case 'value1':
+            userScore += crystalValue1;
+        break;
+        case 'value2':
+            userScore += crystalValue2;
+        break;
+        case 'value3':
+            userScore += crystalValue3;
+        break;
+        case 'value4':
+            userScore += crystalValue4;
+        break;
+    }
+
+    $('#totalScore').html(userScore);
+    
+
+
+    
+}
 
 
 //if not equal to random number lose
