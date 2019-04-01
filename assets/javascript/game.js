@@ -6,27 +6,28 @@ $(document).ready(function() {
 	var crystalValue2;
 	var crystalValue3;
 	var crystalValue4;
-	var userScore;
-
-//random number to match from 30-99
+    var userScore;
+    
 function startGame (){
     userScore = 0;
 
-    // Getting a random number between 19-120 for the game 
-    scoreMatch = 19 + (Math.floor(Math.random()*102));
+    // Getting a random number between 20-120 for the game 
+    scoreMatch = 20 + (Math.floor(Math.random()*102));
+
 
     // Getting random values for each crystal between 1-12
     crystalValue1 = Math.floor(1 + (Math.random()*12));
     crystalValue2 = Math.floor(1 + (Math.random()*12));
     crystalValue3 = Math.floor(1 + (Math.random()*12));
     crystalValue4 = Math.floor(1 + (Math.random()*12));
-  
+    
+    $('#randomScore').html('Match me if you can: ' + scoreMatch);
+    $('#totalScore').html(userScore);
+    $('#winsScore').html('Wins: ' + wins);
+    $('#lossesScore').html('Losses: ' + losses);
 }
-//clicking crystals to equal the random number made. - done
-$(".crystal").click(function (){ 
 
- var crystalNum = parseInt($(this).attr('data-random'));
-console.log(crystalNum);
+
 
 //if not equal to random number lose
 //if equal to random number win
