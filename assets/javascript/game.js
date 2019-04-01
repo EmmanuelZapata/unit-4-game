@@ -11,16 +11,17 @@ $(document).ready(function() {
 function startGame (){
     userScore = 0;
 
-    // Getting a random number between 20-120 for the game 
+    // Getting a random number for the game - Done
     scoreMatch = 20 + (Math.floor(Math.random()*102));
 
 
-    // Getting random values for each crystal between 1-12
+    // Getting random values for each crystal - Done
     crystalValue1 = Math.floor(1 + (Math.random()*12));
     crystalValue2 = Math.floor(1 + (Math.random()*12));
     crystalValue3 = Math.floor(1 + (Math.random()*12));
     crystalValue4 = Math.floor(1 + (Math.random()*12));
-    
+
+     // Moving scores to HTML
     $('#randomScore').html('Match me if you can: ' + scoreMatch);
     $('#totalScore').html(userScore);
     $('#winsScore').html('Wins: ' + wins);
@@ -34,4 +35,4 @@ function startGame (){
 //keep track of wins or losses 
 //reset after win or loss but keep scores
 
-})});
+});
